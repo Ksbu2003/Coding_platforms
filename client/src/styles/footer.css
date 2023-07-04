@@ -1,0 +1,21 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #505a57;
+    color: white;
+    height: 60px;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height of the App container to 100% of the viewport height */
+  }
+  
+  .content {
+    flex: 1; /* Allow the content area to grow to fill the remaining vertical space */
+  }
+  

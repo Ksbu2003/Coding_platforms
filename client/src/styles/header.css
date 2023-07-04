@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #f4fb1f;
+    color: white;
+    height: 60px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+     transform: skewX(-15deg); /* Tilting the buttons */
+  }
+  
+  .nav-links li {
+    width: 100%;
+    margin-top: 2%;
+  }
+  
+  .nav-links li:last-child {
+    margin-left: 2%;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    transform: skewX(15deg); /* Counter-tilt to correct the text */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  .logout-li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-button {
+    color: rgb(0, 0, 0);
+    background-color: #f4fb1f;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    color: rgb(255, 8, 8);
+    transform: skewX(10deg); /* Adjust the tilt on hover */
+  
+  }
+  
+  .login-button {
+    color: rgb(0, 0, 0);
+    background-color: #f4fb1f;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    color: rgb(255, 8, 8);
+    transform: skewX(10deg); /* Adjust the tilt on hover */
+  
+  }
+  .nav-links a:hover{
+    color: rgb(255, 8, 8);
+    transform: skewX(10deg); /* Adjust the tilt on hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: hidden; /* Hide the horizontal scrollbar */
+    }
+  
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    .nav-links a,
+    .nav-links button {
+      transform: none; /* Remove the counter-tilt on mobile */
+    }
+  }
+  

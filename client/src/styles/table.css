@@ -1,0 +1,7 @@
+.CFTable td,th,tr{
+    border: 1px solid black;
+    background-color: aliceblue;
+    font-weight: 600;
+    width: 10%;
+    padding: 0.5%;
+}
